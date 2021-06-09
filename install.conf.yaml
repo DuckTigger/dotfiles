@@ -9,6 +9,7 @@
     ~/.bash_profile: bash_profile
     ~/.zsh_profile: zsh_profile
     ~/.config/sway/config: sway_config
+    ~/.config/alacritty/alacritty.yml: alacritty.yml
 
 - create:
   - ~/Downloads
