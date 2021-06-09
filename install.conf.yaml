@@ -10,6 +10,7 @@
     ~/.zsh_profile: zsh_profile
     ~/.config/sway/config: sway_config
     ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.config/waybar/config: waybar.json
 
 - create:
   - ~/Downloads
