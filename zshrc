@@ -12,5 +12,5 @@ antigen bundle themes
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme robyrussell
+antigen theme candy 
 antigen apply
