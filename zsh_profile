@@ -1,3 +1,0 @@
-# Copied from .bash_profile
-
-[[ -f ~/.bashrc ]] && . ~/.bashrc
