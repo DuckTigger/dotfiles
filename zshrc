@@ -1,5 +1,6 @@
 export ZSH="/home/andrew/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
+source /home/andrew/antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle git
