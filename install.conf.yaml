@@ -5,10 +5,10 @@
 - clean: ['~']
 
 - link:
-  ~/.zshrc: zshrc
-  ~/.bash_profile: bash_profile
-  ~/.zsh_profile: zsh_profile
-  ~/.config/sway/config: sway_config
+    ~/.zshrc: zshrc
+    ~/.bash_profile: bash_profile
+    ~/.zsh_profile: zsh_profile
+    ~/.config/sway/config: sway_config
 
 - create:
   - ~/Downloads
