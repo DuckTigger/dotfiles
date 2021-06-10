@@ -1,0 +1,4 @@
+Host myriad
+    User zcapga1
+    HostName myriad.rc.ucl.ac.uk
+    proxyCommand ssh -W myriad.rc.ucl.ac.uk:22 zcapga1@socrates.ucl.ac.uk

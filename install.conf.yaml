@@ -13,7 +13,8 @@
     ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.config/waybar/config: waybar.json
     ~/.cisco/csd-wrapper-ucl.sh: csd-wrapper-ucl.sh
-    ~/.zshfunctions/uclvpn: zshfunctions/ucl-vpn
+    ~/.oh-my-zsh/functions/ucl-vpn: zshfunctions/ucl-vpn
+    ~/.ssh/config: ssh-config 
     #  ~/.zshfunctions/:
       #  glob: true
       #  path: zshfunctions/*
