@@ -14,7 +14,8 @@
     ~/.config/waybar/config: waybar.json
     ~/.cisco/csd-wrapper-ucl.sh: csd-wrapper-ucl.sh
     ~/.oh-my-zsh/functions/ucl-vpn: zshfunctions/ucl-vpn
-    ~/.ssh/config: ssh-config 
+    ~/.ssh/config: ssh-config
+    ~/.oh-my-zsh/custom/aliases.zsh: aliases.zsh 
     #  ~/.zshfunctions/:
       #  glob: true
       #  path: zshfunctions/*
