@@ -1,0 +1,7 @@
+function ucl-vpn(){
+    sudo openconnect --background --csd-wrapper ~/.cisco/csd-wrapper-ucl.sh --authgroup=RemoteAccess --user=zcapga1 vpn.ucl.ac.uk 
+}
+
+function ucl-down(){
+    sudo pkill openconnect
+}

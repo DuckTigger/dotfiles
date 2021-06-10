@@ -1,6 +1,7 @@
 - defaults:
     link:
       relink: true
+      create: true
 
 - clean: ['~']
 
@@ -11,6 +12,11 @@
     ~/.config/sway/config: sway_config
     ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.config/waybar/config: waybar.json
+    ~/.cisco/csd-wrapper-ucl.sh: csd-wrapper-ucl.sh
+    ~/.zshfunctions/uclvpn: zshfunctions/ucl-vpn
+    #  ~/.zshfunctions/:
+      #  glob: true
+      #  path: zshfunctions/*
 
 - create:
   - ~/Downloads

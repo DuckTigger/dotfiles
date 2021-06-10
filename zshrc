@@ -14,3 +14,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen theme candy 
 antigen apply
+
+
+fpath +=~/.zshfunctions
+autoload -Uz ucl-vpn
+autoload -Uz ucl-down

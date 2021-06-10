@@ -1,5 +1,6 @@
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
+set $alt Mod1
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -50,9 +51,11 @@ input * {
 
     # Kill focused window
     bindsym $mod+Shift+q kill
+    bindsym $alt+F4 kill
 
     # Start your launcher
     bindsym $mod+d exec $menu
+    # bindsym $mod+Space exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
