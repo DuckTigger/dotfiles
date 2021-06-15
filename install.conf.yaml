@@ -15,7 +15,9 @@
     ~/.cisco/csd-wrapper-ucl.sh: csd-wrapper-ucl.sh
     ~/.oh-my-zsh/functions/ucl-vpn: zshfunctions/ucl-vpn
     ~/.ssh/config: ssh-config
-    ~/.oh-my-zsh/custom/aliases.zsh: aliases.zsh 
+    ~/.oh-my-zsh/custom/aliases.zsh: aliases.zsh
+    ~/.vim/bundle/ultisnips/tex.snippets: vim_tex_snippets
+    ~/.vimrc: vimrc 
     #  ~/.zshfunctions/:
       #  glob: true
       #  path: zshfunctions/*
