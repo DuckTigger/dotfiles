@@ -17,10 +17,19 @@
     ~/.ssh/config: ssh-config
     ~/.oh-my-zsh/custom/aliases.zsh: aliases.zsh
     ~/.vim/bundle/ultisnips/tex.snippets: vim_tex_snippets
-    ~/.vimrc: vimrc 
+    ~/.vimrc: vimrc
+    ~/.config/nvim/init.vim: nvim_init.vim
     #  ~/.zshfunctions/:
       #  glob: true
       #  path: zshfunctions/*
 
 - create:
   - ~/Downloads
+  - ~/Documents/PhD/ion-trap-noise
+  - ~/Documents/PhD/latex-projects/ion-trap-noise-latex
+  - ~/Documents/PhD/AnsatzFinder
+  - ~/Documents/PhD/non-linearities
+
+
+
+
