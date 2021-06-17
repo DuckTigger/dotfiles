@@ -3,34 +3,6 @@ set nocompatible              " be iMproved, required
 
 filetype off                  " required
 
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
-"Plugin 'VundleVim/Vundle.vim'
-
-" Plugin 'tpope/vim-fugitive'
-" Plugin 'L9'
-" 
-" Plugin 'vim-latex/vim-latex'
-" 
-" Plugin 'zsh-users/zsh-syntax-highlighting'
-" 
-" Plugin 'ervandew/supertab'
-" 
-" Plugin 'valloric/youcompleteme'
-" Plugin 'SirVer/ultisnips'
-" Plugin 'scrooloose/nerdtree'
-" Plugin 'junegunn/fzf' 
-" 
-" Plugin 'honza/vim-snippets'
-" Plugin 'morhetz/gruvbox'
-" Plugin 'scrooloose/syntastic'
-" Plugin 'kamykn/spelunker.vim'
-" 
-" " All of your Plugins must be added before the following line
-" call vundle#end()            " required
-" filetype plugin indent on    " required
-" filetype plugin on
-" Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
@@ -54,8 +26,9 @@ Plug 'junegunn/fzf'
 Plug 'honza/vim-snippets'
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/syntastic'
+Plug 'kamykn/popup-menu.nvim'
 Plug 'kamykn/spelunker.vim'
-
+Plug 'sonph/onehalf'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -67,12 +40,22 @@ let g:vimtex_view_method='chromium'
 let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
 " - https://github.com/Valloric/YouCompleteMe
 " - https://github.com/nvim-lua/completion-nvim
-let g:UltiSnipsExpandTrigger="<A+tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" let g:UltiSnipsExpandTrigger="<A+Tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 set t_Co=256
 
@@ -85,3 +68,18 @@ autocmd! GUIEnter * set vb t_vb="|f"
 setlocal nospell
 set spelllang=en_gb
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
+" let g:ycm_filetype_blacklist = {
+" \ 'tagbar': 1,
+" \ 'notes': 1,
+" \ 'markdown': 1,
+" \ 'netrw': 1,
+" \ 'unite': 1,
+" \ 'text': 1,
+" \ 'vimwiki': 1,
+" \ 'pandoc': 1,
+" \ 'infolog': 1,
+" \ 'leaderf': 1,
+" \ 'tex': 1,
+" \ 'mail': 1
+" \}
