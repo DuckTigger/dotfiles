@@ -186,7 +186,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # No titles on these apps:
-for_window [class="Chromium-browser"] border pixel
+for_window [class="Chromium"] border pixel
 for_window [class="firefox"] border pixel
 for_window [app_id="Brave-browser"] border pixel
 for_window [class="Slack"] border pixel
