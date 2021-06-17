@@ -17,6 +17,7 @@
     ~/.ssh/config: ssh-config
     ~/.oh-my-zsh/custom/aliases.zsh: aliases.zsh
     ~/.vim/bundle/ultisnips/tex.snippets: vim_tex_snippets
+    ~/.vim/plugged/vim-snippets/snippets/tex.snippets: vim_tex_defaults 
     ~/.vimrc: vimrc
     ~/.config/nvim/init.vim: nvim_init.vim
     #  ~/.zshfunctions/:
