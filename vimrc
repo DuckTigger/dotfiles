@@ -12,7 +12,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/L9'
 
-Plug 'vim-latex/vim-latex'
+Plug 'lervag/vimtex'
 
 Plug 'zsh-users/zsh-syntax-highlighting'
 
@@ -36,10 +36,10 @@ call plug#end()
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
-let g:vimtex_view_method='chromium'
 let g:vimtex_quickfix_mode=0
 set conceallevel=1
-let g:tex_conceal='abdmg'
+" let g:vimtex_view_general_viewer = 'zathura'
+" let g:vimtex_viewer_zathura = 1
 
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
