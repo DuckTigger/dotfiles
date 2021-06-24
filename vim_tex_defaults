@@ -8,6 +8,7 @@ snippet template "Basic template" b
 	\\usepackage[T1]{fontenc}
 	\\usepackage{textcomp}
 	\\usepackage{amsmath, amssymb}
+	\\usepackage{physics}
 
 
 	% figure support
@@ -452,5 +453,5 @@ snippet ra rightarrow
 	\\rightarrow {$0}
 
 # Long right arrow
-snippet lra longrightarrow
+snippet lrar longrightarrow
 	\\longrightarrow {$0}
