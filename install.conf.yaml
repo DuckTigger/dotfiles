@@ -20,9 +20,8 @@
     ~/.vim/plugged/vim-snippets/snippets/tex.snippets: vim_tex_defaults 
     ~/.vimrc: vimrc
     ~/.config/nvim/init.vim: nvim_init.vim
-    #  ~/.zshfunctions/:
-      #  glob: true
-      #  path: zshfunctions/*
+    ~/texmf/tex/latex/ucl-beamer: ucl-beamer/
+    ~/.zshfunctions: zshfunctions/
 
 - create:
   - ~/Downloads
