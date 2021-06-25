@@ -1,6 +1,67 @@
 #version 1
 #PREAMBLE
 
+snippet presentation Presentation_Template
+	\\documentclass{beamer}
+	\\usetheme{ucl}
+	\\setbeamercolor{banner}{bg=stone}
+	\\usepackage[font=scriptsize]{caption}
+	\\captionsetup[figure]{labelformat=empty}
+	\\setbeamerfont{page number in head/foot}{size=\small}
+	\\setbeamertemplate{footline}[frame number]
+
+	\\setbeamertemplate{itemize item}[circle]
+
+	% No navigation symbols at the slides' bottom
+	\\beamertemplatenavigationsymbolsempty
+
+	% Insert a pause after every item.
+	% Show an item immediately by adding <.->
+	\\beamerdefaultoverlayspecification{<+->}
+
+	\\usepackage[utf8]{inputenc}
+	\\usepackage[T1]{fontenc}
+	\\usepackage{textcomp}
+	\\usepackage{amsmath, amssymb}
+	\\usepackage{physics}
+
+
+	% figure support
+	\\usepackage{import}
+	\\usepackage{xifthen}
+	\\usepackage{pdfpages}
+	\\usepackage{transparent}
+	\\newcommand{\incfig}[1]{%
+		\\def\\svgwidth{\\columnwidth}
+		\\import{./figures/}{#1.pdf_tex}
+	}
+	\\graphicspath{{./figures/}}
+
+	\\pdfsuppresswarningpagegroup=1
+
+	\\title{${1:title}}
+	\\author[AP]{Andrew Patterson}
+	\\institute[UCL]{%
+		Department of Physics \\ %
+		University College London
+
+	}
+	\\date{\today}
+
+	\\begin{document}
+
+	\\begin{frame}[t]
+		\\titlepage%
+	\\end{frame}
+
+	\\begin{frame}[t]
+		\\frametitle{${2:frametitle}}
+		\\framesubtitle{${3:framesubtitle}}
+		${0}
+	\\end{frame}
+
+	\\end{document}
+
 snippet template "Basic template" b
 	\\documentclass[a4paper]{article}
 
@@ -21,6 +82,8 @@ snippet template "Basic template" b
 		\\def\\svgwidth{\\columnwidth}
 		\\import{./figures/}{#1.pdf_tex}
 	}
+	\\graphicspath{{./figures/}}
+
 
 	\\pdfsuppresswarningpagegroup=1
 
@@ -335,6 +398,26 @@ snippet frame frame environment
 		\framesubtitle{${3:subtitle}}
 		${0:${VISUAL}}
 	\\end{frame}
+snippet framefig frame environment with figure
+	\\begin{frame}[${1:t}]
+		\\frametitle{${2:title}}
+		\\framesubtitle{${3:subtitle}}
+	\\begin{minipage}{0.5\textwidth}
+		\\begin{itemize}
+			\\item ${0:${VISUAL}}
+		\\end{itemize}
+	\\end{minipage} \\hfill
+	\\begin{minipage}{0.45\\textwidth}
+		\\uncover<0->{
+		\\begin{figure}
+			\\begin{center}
+				\\includegraphics[height=0.9\\textwidth]{${4}}
+			\\end{center}
+			\\caption{${5}}
+			\\label{fig:${6}}
+		\\end{figure}
+		}
+	\\end{frame}
 snippet block block environment
 	\\begin{block}{${1:title}}
 		${0:${VISUAL}}
@@ -455,3 +538,10 @@ snippet ra rightarrow
 # Long right arrow
 snippet lrar longrightarrow
 	\\longrightarrow {$0}
+
+# $ shorthand
+snippet $ inline_math
+	\$ ${1} \$ ${0}
+# {} shorthand
+snippet { open_close_curly
+	\{${1}\} ${0}
