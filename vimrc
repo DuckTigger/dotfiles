@@ -25,7 +25,7 @@ Plug 'valloric/youcompleteme'
 Plug 'SirVer/ultisnips'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf' 
-
+Plug 'townk/vim-autoclose'
 Plug 'honza/vim-snippets'
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/syntastic'

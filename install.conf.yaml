@@ -22,6 +22,8 @@
     ~/.config/nvim/init.vim: nvim_init.vim
     ~/texmf/tex/latex/ucl-beamer: ucl-beamer/
     ~/.zshfunctions: zshfunctions/
+    ~/.gitconfig: gitconfig
+
 
 - create:
   - ~/Downloads
