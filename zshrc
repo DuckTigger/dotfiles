@@ -56,12 +56,13 @@ case "${unameOut}" in
     MINGW*)     machine=MinGw;;
     *)          machine="UNKNOWN:${unameOut}"
 esac
-if [ ${machine} == "Linux" ]
+
+if [[ ${machine} == "Linux" ]]
     then
-		(cat ~/.cache/wal/sequences &)
+        (cat ~/.cache/wal/sequences &)
 #        export MOZ_ENABLE_WAYLAND=1
 #        export wmname LG3D
-elif [ ${machine} == "Mac" ]
+elif [[ ${machine} == "Mac" ]]
     then
         export PYTHONPATH=/Users/andrew/python/pyscf:PYTHONPATH
 fi
