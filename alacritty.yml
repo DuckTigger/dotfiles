@@ -27,3 +27,5 @@ window:
   position:
     x: 1500
     y: 500
+
+background_opacity: 0.3
