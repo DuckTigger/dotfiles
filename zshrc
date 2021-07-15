@@ -44,4 +44,25 @@ unset __conda_setup
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+<<<<<<< HEAD
 (cat ~/.cache/wal/sequences &)
+=======
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+if [ ${machine} == "Linux" ]
+    then
+#        export MOZ_ENABLE_WAYLAND=1
+#        export wmname LG3D
+elif [ ${machine} == "Mac" ]
+    then
+        export PYTHONPATH=/Users/andrew/python/pyscf:PYTHONPATH
+fi
+>>>>>>> 34ecd8c2e7f8890fcd68ff8542451ef1d6da03f1
