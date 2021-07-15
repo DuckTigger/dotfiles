@@ -41,6 +41,10 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+if [ -d "/Users/andrew/python/pyscf" ]; then
+	export PYTHONPATH="/Users/andrew/python/pyscf":$PYTHONPATH
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
