@@ -41,24 +41,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+if [ -d "/Users/andrew/python/pyscf" ]; then
+	export PYTHONPATH="/Users/andrew/python/pyscf":$PYTHONPATH
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-unameOut="$(uname -s)"
-case "${unameOut}" in
-    Linux*)     machine=Linux;;
-    Darwin*)    machine=Mac;;
-    CYGWIN*)    machine=Cygwin;;
-    MINGW*)     machine=MinGw;;
-    *)          machine="UNKNOWN:${unameOut}"
-esac
-[[ -f ~/.bashrc ]] && . ~/.bashrc
-
-if [ ${machine} == "Linux" ]
-    then
-#        export MOZ_ENABLE_WAYLAND=1
-#        export wmname LG3D
-elif [ ${machine} == "Mac" ]
-    then
-        export PYTHONPATH=/Users/andrew/python/pyscf:PYTHONPATH
-fi
