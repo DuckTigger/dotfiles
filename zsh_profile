@@ -1,5 +1,19 @@
 # Copied from .bash_profile
-
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-export MOZ_ENABLE_WAYLAND=1
-export wmname LG3D
+
+if [ ${machine} == "Linux" ]
+	then
+        export MOZ_ENABLE_WAYLAND=1
+        export wmname LG3D
+elif [ ${machine} == "Mac" ]
+	then
+		export PYTHONPATH=/Users/andrew/python/pyscf:PYTHONPATH
+fi
