@@ -36,7 +36,11 @@ Plug 'dylanaraps/wal.vim'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-colorscheme wal
+
+let uname = system('uname -a')
+if !has('macunix')
+	colorscheme wal
+endif
 
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
