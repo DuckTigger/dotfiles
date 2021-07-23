@@ -23,6 +23,7 @@
     ~/texmf/tex/latex/ucl-beamer: ucl-beamer/
     ~/.zshfunctions: zshfunctions/
     ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
 
 
 - create:
