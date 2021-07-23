@@ -13,6 +13,7 @@ if [[ ${machine} == "Linux" ]]
 #        export MOZ_ENABLE_WAYLAND=1
 #        export wmname LG3D
 		wal -R
+		export PATH=/home/andrew/.local/bin:$PATH
 elif [[ ${machine} == "Mac" ]]
 	then
 		export PYTHONPATH=/Users/andrew/python/pyscf:$PYTHONPATH
