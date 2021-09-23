@@ -47,6 +47,7 @@ endif
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
 let g:vimtex_quickfix_mode=0
+let g:Tex_MultipleCompileFormats='pdf,bib,pdf'
 set conceallevel=1
 " let g:vimtex_view_general_viewer = 'zathura'
 " let g:vimtex_viewer_zathura = 1

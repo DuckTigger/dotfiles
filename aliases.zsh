@@ -7,3 +7,4 @@ alias fzf="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {
 alias grep=batgrep
 alias less=bat
 alias cat=bat
+alias jupyterPort='nohup ssh -N -f -L localhost:9999:localhost:9999 Arch-PC'
