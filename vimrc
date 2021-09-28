@@ -33,6 +33,7 @@ Plug 'kamykn/popup-menu.nvim'
 Plug 'kamykn/spelunker.vim'
 Plug 'sonph/onehalf'
 Plug 'dylanaraps/wal.vim'
+Plug 'mracos/mermaid.vim'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -51,6 +52,9 @@ let g:Tex_MultipleCompileFormats='pdf,bib,pdf'
 set conceallevel=1
 " let g:vimtex_view_general_viewer = 'zathura'
 " let g:vimtex_viewer_zathura = 1
+let g:vimtex_compiler_latexmk = {
+            \ 'build_dir' : 'build',
+            \}
 
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
