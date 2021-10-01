@@ -24,6 +24,7 @@
     ~/.zshfunctions: zshfunctions/
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
+    ~/git_uncomitted.sh: git_uncomitted.sh
 
 
 - create:
