@@ -3,7 +3,12 @@ Host myriad
     HostName myriad.rc.ucl.ac.uk
 	proxyCommand ssh -W myriad.rc.ucl.ac.uk:22 zcapga1@socrates.ucl.ac.uk
 
-Host Arch-PC
+Host Home-PC
 	User andrew
 	HostName 192.168.86.183
+	Port 39861
+
+Host External-Home-PC
+	User andrew
+	HostName 81.102.128.230
 	Port 39861
