@@ -25,6 +25,7 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/Documents/PhD/git_uncomitted.sh: git_uncomitted.sh
+    ~/loginrc.cmd: loginrc.cmd
 
 
 - create:
