@@ -40,9 +40,11 @@ call plug#end()
 
 
 let uname = system('uname -a')
-if !has('macunix')
-	colorscheme wal
-endif
+"if !has('macunix')
+"	colorscheme wal
+"endif
+
+colorscheme wal
 
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
