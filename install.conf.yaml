@@ -27,8 +27,8 @@
     ~/Documents/PhD/git_uncomitted.sh: git_uncomitted.sh
     ~/loginrc.cmd: loginrc.cmd
     ~/.vim/spell/en.utf-8.add: en.utf-8.add
-    ~/.yabairc: yabai-config/yabairc
-    ~/.skhdrc: yabai-config/skhdrc
+    ~/.config/yabai/yabairc: yabai-config/yabairc
+    ~/.config/skhd/skhdrc: yabai-config/skhdrc
 
 
 - create:
