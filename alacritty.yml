@@ -27,6 +27,6 @@ window:
   position:
     x: 1500
     y: 500
-  decorations: None
+  decorations: None 
 
 background_opacity: 0.5
