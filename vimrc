@@ -46,6 +46,9 @@ let uname = system('uname -a')
 
 colorscheme wal
 
+imap ;; <Esc>
+nmap <Space> i
+
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
