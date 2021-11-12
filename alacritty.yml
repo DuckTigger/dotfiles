@@ -29,4 +29,5 @@ window:
     y: 500
   decorations: None 
 
-background_opacity: 0.5
+background_opacity: 0.95
+
