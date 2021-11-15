@@ -411,7 +411,7 @@ snippet framefig frame environment with figure
 		\\uncover<0->{
 		\\begin{figure}
 			\\begin{center}
-				\\includegraphics[height=0.9\\textwidth]{${4}}
+				\\includegraphics[height=0.9\\textheight]{${4}}
 			\\end{center}
 			\\caption{${5}}
 			\\label{fig:${6}}
