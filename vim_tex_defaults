@@ -417,6 +417,7 @@ snippet framefig frame environment with figure
 			\\label{fig:${6}}
 		\\end{figure}
 		}
+	\\end{minipage}
 	\\end{frame}
 snippet block block environment
 	\\begin{block}{${1:title}}
