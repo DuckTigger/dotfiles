@@ -24,6 +24,7 @@ snippet presentation Presentation_Template
 	\\usepackage{textcomp}
 	\\usepackage{amsmath, amssymb}
 	\\usepackage{physics}
+	\\usepackage{qcircuit}
 
 
 	% figure support
@@ -121,6 +122,14 @@ snippet begin \begin{} ... \end{} block
 snippet mkt maketitle
 	\\maketitle
 	
+# QCircuit
+snippet qcirc Create qcircuit inside figure
+	\\mbox{
+		\\Qcircuit @C=1em @R=.7em{
+			${0:${VISUAL}}
+		}
+	}
+
 # Tabular
 snippet tab tabular (or arbitrary) environment
 	\\begin{${1:tabular}}{${2:c}}
@@ -411,12 +420,13 @@ snippet framefig frame environment with figure
 		\\uncover<0->{
 		\\begin{figure}
 			\\begin{center}
-				\\includegraphics[height=0.9\\textwidth]{${4}}
+				\\includegraphics[height=0.9\\textheight]{${4}}
 			\\end{center}
 			\\caption{${5}}
 			\\label{fig:${6}}
 		\\end{figure}
 		}
+	\\end{minipage}
 	\\end{frame}
 snippet block block environment
 	\\begin{block}{${1:title}}
