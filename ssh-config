@@ -1,13 +1,13 @@
-Host * 
-	HostkeyAlgorithms +ssh-rsa
-	PubkeyAcceptedKeyTypes +ssh-rsa
+#Host * 
+#	HostkeyAlgorithms +ssh-rsa
+#	PubkeyAcceptedKeyTypes +ssh-rsa
 
 Host myriad
     User zcapga1
     HostName myriad.rc.ucl.ac.uk
 	proxyCommand ssh -W myriad.rc.ucl.ac.uk:22 zcapga1@socrates.ucl.ac.uk
-	HostKeyAlgorithms +ssh-rsa
-	PubkeyAcceptedKeyTypes +ssh-rsa
+	#HostKeyAlgorithms +ssh-rsa
+	#PubkeyAcceptedKeyTypes +ssh-rsa
 
 Host Home-PC
 	User andrew
