@@ -1,6 +1,6 @@
-# Host * 
-#   HostkeyAlgorithms +ssh-rsa
-#	PubkeyAcceptedKeyTypes +ssh-rsa
+Host * 
+   HostkeyAlgorithms +ssh-rsa
+   PubkeyAcceptedKeyTypes +ssh-rsa
 
 Host myriad
     User zcapga1
