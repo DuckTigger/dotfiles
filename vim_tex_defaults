@@ -468,13 +468,13 @@ snippet \{ \{ \}
 snippet lr left right
 	\\left${1} ${0:${VISUAL}} \\right$1
 snippet lr( left( right)
-	\\left( ${0:${VISUAL}} \\right
+	\\left( ${0:${VISUAL}} \\right)
 snippet lr| left| right|
 	\\left| ${0:${VISUAL}} \\right|
 snippet lr{ left\{ right\}
-	\\left\\{ ${0:${VISUAL}} \\right
+	\\left\\{ ${0:${VISUAL}} \\right\\}
 snippet lr[ left[ right]
-	\\left[ ${0:${VISUAL}} \\right\\
+	\\left[ ${0:${VISUAL}} \\right]
 snippet lra langle rangle
 	\\langle ${0:${VISUAL}} \\rangle
 # Physics
