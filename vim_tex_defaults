@@ -122,13 +122,18 @@ snippet begin \begin{} ... \end{} block
 snippet mkt maketitle
 	\\maketitle
 	
-# QCircuit
-snippet qcirc Create qcircuit inside figure
-	\\mbox{
-		\\Qcircuit @C=1em @R=.7em{
-			${0:${VISUAL}}
-		}
+
+# Quantum Circuit
+snippet qcirc Create a qcirc figure
+	\\begin{figure}[${1}]
+		\\centering
+		
+		\\mbox{
+		\\Qcircuit @C=1em @R=.7em {
+			\\lstick{\\ket{${2}}} & ${0:${VISUAL}} \\\\
 	}
+	}
+	\\end{figure}
 
 # Tabular
 snippet tab tabular (or arbitrary) environment
@@ -463,15 +468,22 @@ snippet \{ \{ \}
 snippet lr left right
 	\\left${1} ${0:${VISUAL}} \\right$1
 snippet lr( left( right)
-	\\left( ${0:${VISUAL}} \\right)
+	\\left( ${0:${VISUAL}} \\right
 snippet lr| left| right|
 	\\left| ${0:${VISUAL}} \\right|
 snippet lr{ left\{ right\}
-	\\left\\{ ${0:${VISUAL}} \\right\\}
+	\\left\\{ ${0:${VISUAL}} \\right
 snippet lr[ left[ right]
-	\\left[ ${0:${VISUAL}} \\right]
+	\\left[ ${0:${VISUAL}} \\right\\
 snippet lra langle rangle
 	\\langle ${0:${VISUAL}} \\rangle
+# Physics
+snippet ket Dirac ket
+	\\ket{${1}} ${0:${VISUAL}}
+snippet bra Dirac bra
+	\\bra{${1}} ${0:${VISUAL}}
+snippet ketbra Dirac ketbra
+	\\ketbra{${1}}{${2}} ${0:${VISUAL}}
 # Code listings
 snippet lst
 	\\begin{listing}[language=${1:language}]

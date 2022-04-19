@@ -1,3 +1,7 @@
+Host *
+	HostKeyAlgorithms +ssh-rsa
+	PubkeyAcceptedKeyTypes +ssh-rsa
+
 Host myriad
     User zcapga1
     HostName myriad.rc.ucl.ac.uk
@@ -9,7 +13,7 @@ Host socrates
 	User zcapga1
 	HostName socrates.ucl.ac.uk
 	HostKeyAlgorithms +ssh-rsa
-	PubkeyAcceptedKeyTypes +ssh-rsa
+ 	PubkeyAcceptedKeyTypes +ssh-rsa
 
 Host Home-PC
 	User andrew
