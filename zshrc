@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Import colourscheme from wal
-(cat ~/.cache/wal/sequences &)
+ (cat ~/.cache/wal/sequences &)
 
 DISABLE_LS_COLORS='true'
 export ZSH=~/.oh-my-zsh
