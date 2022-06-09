@@ -415,6 +415,8 @@ snippet ita italic text
 	\\textit{${1:${VISUAL:text}}}${0}
 snippet bf bold face text
 	\\textbf{${1:${VISUAL:text}}}${0}
+snippet mbf bold face math text
+	\\mathbf{${1:${VISUAL:text}}}${0}
 snippet under underline text
 	\\underline{${1:${VISUAL:text}}}${0}
 snippet over overline text
@@ -569,9 +571,9 @@ snippet lra langle rangle
 	\\langle ${0:${VISUAL}} \\rangle
 # Physics
 snippet ket Dirac ket
-	\\ket{${1}} ${0:${VISUAL}}
+	\\ket{${1}}${0:${VISUAL}}
 snippet bra Dirac bra
-	\\bra{${1}} ${0:${VISUAL}}
+	\\bra{${1}}${0:${VISUAL}}
 snippet ketbra Dirac ketbra
 	\\ketbra{${1}}{${2}} ${0:${VISUAL}}
 # Code listings
@@ -642,15 +644,15 @@ snippet . dot product
 # Integral
 snippet int integral
 	\\int_{{$1}}^{{$2}} {$3} \: d{$4} {$5}
-
+# Trace operator
+snippet tra trace
+	\\textrm{Tr}\\left[ ${1} \\right]${0:${VISUAL}}
 # Right arrow
 snippet ra rightarrow
 	\\rightarrow {$0}
-
 # Long right arrow
 snippet lrar longrightarrow
 	\\longrightarrow {$0}
-
 # $ shorthand
 snippet $ inline_math
 	\$ ${1} \$ ${0}
