@@ -49,3 +49,4 @@ unset __conda_setup
 export PATH="$PATH:$HOME/.local/bin"
 export PROMPT_COMMAND=`printf "\e]112\a"`
 export PATH=$PATH:/home/andrew/.spicetify
+export PATH=$PATH:/Users/andrew/.spicetify
