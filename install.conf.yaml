@@ -11,16 +11,18 @@
     ~/.zsh_profile: zsh_profile
     ~/.config/sway/config: sway_config
     ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.config/zathura: zathura/
     ~/.config/waybar/config: waybar.json
     ~/.cisco/csd-wrapper-ucl.sh: csd-wrapper-ucl.sh
     ~/.oh-my-zsh/functions/ucl-vpn: zshfunctions/ucl-vpn
     ~/.ssh/config: ssh-config
     ~/.oh-my-zsh/custom/aliases.zsh: aliases.zsh
-    ~/.vim/bundle/ultisnips/tex.snippets: vim_tex_snippets
+    ~/.vim/plugged/vim-snippets/UltiSnips/tex.snippets: vim_tex_snippets
     ~/.vim/plugged/vim-snippets/snippets/tex.snippets: vim_tex_defaults 
     ~/.vimrc: vimrc
     ~/.config/nvim/init.vim: nvim_init.vim
     ~/texmf/tex/latex/ucl-beamer: ucl-beamer/
+    ~/texmf/tex/latex/moderncv: moderncv/
     ~/.zshfunctions: zshfunctions/
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore

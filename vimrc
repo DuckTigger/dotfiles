@@ -16,6 +16,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/L9'
 
 Plug 'lervag/vimtex'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
 Plug 'zsh-users/zsh-syntax-highlighting'
 
@@ -44,10 +45,11 @@ let uname = system('uname -a')
 "	colorscheme wal
 "endif
 
-colorscheme wal
+let g:catppuccin_flavour = "mocha"
+colorscheme catppuccin
 
-imap ;; <Esc>
-nmap <Space> i
+" imap ;; <Esc>
+nmap <Space> a
 
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
