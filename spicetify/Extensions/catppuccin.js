@@ -1,0 +1,1 @@
+/home/andrew/.config/spicetify/Themes/catppuccin/catppuccin.js
