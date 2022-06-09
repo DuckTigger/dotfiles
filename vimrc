@@ -86,7 +86,7 @@ let g:UltiSnipsEditSplit="vertical"
 " Sets the visual bell when using MVim
 autocmd! GUIEnter * set vb t_vb="|f"
 
-setlocal nospell
+setlocal spell
 set spelllang=en_gb
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
