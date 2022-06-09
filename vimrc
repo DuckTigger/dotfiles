@@ -45,7 +45,7 @@ let uname = system('uname -a')
 "	colorscheme wal
 "endif
 
-source currentmode
+runtime currentmode
 " let g:catppuccin_flavour = "mocha"
 " colorscheme catppuccin
 
