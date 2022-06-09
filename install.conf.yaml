@@ -11,6 +11,7 @@
     ~/.zsh_profile: zsh_profile
     ~/.config/sway/config: sway_config
     ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.vim/plugged/catppuccin/lua/catppuccin/config.lua: catppuccin_vim_config
     ~/.config/zathura: zathura/
     ~/.config/waybar/config: waybar.json
     ~/.cisco/csd-wrapper-ucl.sh: csd-wrapper-ucl.sh
