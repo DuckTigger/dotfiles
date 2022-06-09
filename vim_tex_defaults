@@ -1,5 +1,5 @@
-#version 1
-#PREAMBLE
+# version 1
+# PREAMBLE
 
 snippet presentation Presentation_Template
 	\\documentclass{beamer}
@@ -37,6 +37,7 @@ snippet presentation Presentation_Template
 		\\import{./figures/}{#1.pdf_tex}
 	}
 	\\graphicspath{{./figures/}}
+	\\usepackage{subcaption}
 
 	\\pdfsuppresswarningpagegroup=1
 
@@ -84,7 +85,7 @@ snippet template "Basic template" b
 		\\import{./figures/}{#1.pdf_tex}
 	}
 	\\graphicspath{{./figures/}}
-
+	\\usepackage{subcaption}
 
 	\\pdfsuppresswarningpagegroup=1
 
@@ -207,6 +208,7 @@ snippet item itemize environment
 		\\item ${0}
 	\\end{itemize}
 snippet it \item
+
 	\\item ${1:${VISUAL}}
 # Description
 snippet desc description environment
@@ -357,7 +359,7 @@ snippet ft \footnote
 snippet fig figure environment (includegraphics)
 	\\begin{figure}
 	\\begin{center}
-		\\includegraphics[scale=${1}]{Figures/${2}}
+		\\includegraphics[width=${1}\\textwidth]{${2}}
 	\\end{center}
 	\\caption{${3}}
 	\\label{fig:${4}}
@@ -423,10 +425,9 @@ snippet framefig frame environment with figure
 	\\end{minipage} \\hfill
 	\\begin{minipage}{0.45\\textwidth}
 		\\uncover<0->{
-		\\begin{figure}
-			\\begin{center}
-				\\includegraphics[height=0.9\\textheight]{${4}}
-			\\end{center}
+		\\begin{figure}[t]
+			\\centering
+			\\includegraphics[width=0.9\\textwidth]{${4}}
 			\\caption{${5}}
 			\\label{fig:${6}}
 		\\end{figure}
