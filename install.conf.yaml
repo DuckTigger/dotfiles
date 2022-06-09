@@ -20,7 +20,8 @@
     ~/.oh-my-zsh/custom/aliases.zsh: aliases.zsh
     ~/.vim/plugged/vim-snippets/UltiSnips/tex.snippets: vim_tex_snippets
     ~/.vim/plugged/vim-snippets/snippets/tex.snippets: vim_tex_defaults 
-    ~/.vimrc: vimrc
+    ~/.vim/.vimrc: vimrc
+    ~/.vim/currentmode: currentmode
     ~/.config/nvim/init.vim: nvim_init.vim
     ~/texmf/tex/latex/ucl-beamer: ucl-beamer/
     ~/texmf/tex/latex/moderncv: moderncv/

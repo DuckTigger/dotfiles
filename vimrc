@@ -45,8 +45,9 @@ let uname = system('uname -a')
 "	colorscheme wal
 "endif
 
-let g:catppuccin_flavour = "mocha"
-colorscheme catppuccin
+source currentmode
+" let g:catppuccin_flavour = "mocha"
+" colorscheme catppuccin
 
 " imap ;; <Esc>
 nmap <Space> a

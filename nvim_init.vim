@@ -73,4 +73,4 @@ let &packpath = &runtimepath
 " 	symbols_outline = true,
 " 	}})
 " EOF
-source ~/.vimrc
+source ~/.vim/.vimrc
