@@ -5,3 +5,6 @@
 [submodule "ucl-beamer"]
 	path = ucl-beamer
 	url = git@github.com:UCL/ucl-beamer.git
+[submodule "iterm"]
+	path = iterm
+	url = git@github.com:catppuccin/iterm.git
