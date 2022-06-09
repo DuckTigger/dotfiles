@@ -64,6 +64,95 @@ snippet presentation Presentation_Template
 
 	\\end{document}
 
+snippet poster "Beamer poster template"
+	\\documentclass{beamer}
+	\\usepackage[orientation=landscape, size=a1]{beamerposter}
+	\\usetheme{uclposter}
+	\\setbeamercolor{banner}{bg=darkpurple}
+	\\useinnertheme{blockborder}
+	\\setbeamercolor{block body}{bg=white, fg=black}
+	\\usepackage[font=scriptsize]{caption}
+	\\captionsetup[figure]{labelformat=empty}
+	
+	\\setbeamertemplate{itemize item}[circle]
+	
+	\\setbeamersize{text margin left=2cm,text margin right=2cm}
+	
+	\\newlength\blockcolsep%
+	\\setlength\blockcolsep{2ex}
+	\\newlength\postercolumnsep%
+	\\setlength\postercolumnsep{2cm}
+	
+	\\newlength\postercolumnwidth%
+	\\setlength\postercolumnwidth{0.3333\textwidth-0.66666\postercolumnsep}
+	
+	\\newlength\totalwidth%
+	\\setlength\totalwidth{\textwidth+3ex}
+	
+	% No navigation symbols at the slides' bottom
+	\\beamertemplatenavigationsymbolsempty
+	
+	
+	\\usepackage[utf8]{inputenc}
+	\\usepackage[T1]{fontenc}
+	\\usepackage{textcomp}
+	\\usepackage{amsmath, amssymb}
+	\\usepackage{physics}
+	\\usepackage{qcircuit}
+	
+	
+	% figure support
+	\\usepackage{import}
+	\\usepackage{xifthen}
+	\\usepackage{pdfpages}
+	\\usepackage{transparent}
+	\\newcommand{\incfig}[1]{%
+		\\def\svgwidth{\columnwidth}
+		\\import{./figures/}{#1.pdf_tex}
+	}
+	\\graphicspath{{./figures/}}
+	
+	\\pdfsuppresswarningpagegroup=1
+	
+	\\title{${1:title}}
+	\\author[AP]{Andrew Patterson}
+	\\institute[UCL]{%
+		Department of Physics \\ %
+		University College London
+	
+	}
+	
+	\\begin{document}
+	
+	\\begin{frame}[t]{}
+	\\centering
+	\\begin{columns}[totalwidth=\totalwidth]
+		\\begin{column}[t]{\postercolumnwidth}
+		\\centering
+			\\begin{block}{${2:BlockTitle}}
+				${3:Content}
+			\\end{block}
+		\\end{column}
+	%
+		\\begin{column}[t]{\postercolumnwidth}
+		\\centering
+			\\begin{block}{}
+			
+			\\end{block}
+		
+		\\end{column}
+		%
+		\\begin{column}[t]{\postercolumnwidth}
+		\\centering
+			\\begin{block}{}
+			
+			\\end{block}
+		
+		\\end{column}
+	\\end{columns}
+	\\end{frame}
+	\\end{document}
+
 snippet template "Basic template" b
 	\\documentclass[a4paper]{article}
 
@@ -208,7 +297,6 @@ snippet item itemize environment
 		\\item ${0}
 	\\end{itemize}
 snippet it \item
-
 	\\item ${1:${VISUAL}}
 # Description
 snippet desc description environment
