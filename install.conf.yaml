@@ -33,6 +33,8 @@
     ~/.vim/spell/en.utf-8.add: en.utf-8.add
     ~/.config/yabai/yabairc: yabai-config/yabairc
     ~/.config/skhd/skhdrc: yabai-config/skhdrc
+    ~/light.sh: light.sh
+    ~/dark.sh: dark.sh
 
 
 - create:
