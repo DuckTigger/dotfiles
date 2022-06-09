@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Import colourscheme from wal
-(cat ~/.cache/wal/sequences &)
+# (cat ~/.cache/wal/sequences &)
 
 DISABLE_LS_COLORS='true'
 export ZSH=~/.oh-my-zsh
@@ -48,3 +48,4 @@ unset __conda_setup
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="$PATH:$HOME/.local/bin"
 export PROMPT_COMMAND=`printf "\e]112\a"`
+export PATH=$PATH:/home/andrew/.spicetify
