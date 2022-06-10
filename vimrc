@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
 " Declare the list of plugins.
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/seoul256.vim'
+Plug 'cormacrelf/dark-notify'
 
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/L9'
