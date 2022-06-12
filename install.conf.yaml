@@ -35,6 +35,7 @@
     ~/.config/skhd/skhdrc: yabai-config/skhdrc
     ~/light.sh: light.sh
     ~/dark.sh: dark.sh
+    ~/switchModes.sh: switchModes.sh
 
 
 - create:
