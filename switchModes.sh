@@ -10,12 +10,12 @@ then
 else
 	MODE="darkmode"
 fi
-echo $(cat "${FIREFOX_DIR}userContent.css")
-osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to not dark mode'
 cat ~/dotfiles/$MODE.vim > ~/dotfiles/currentmode
 cat ~/dotfiles/zathura/$MODE > ~/dotfiles/zathura/zathurarc
+cat ~/Documents/Obsidian_notes/.obsidian/$MODE > ~/Documents/Obsidian_notes/.obsidian/appearance.json
 cat "${FIREFOX_DIR}${MODE}.css" > "${FIREFOX_DIR}userContent.css"
 cat "${ZOTERO_DIR}${MODE}.css" > "${ZOTERO_DIR}userChrome.css"
 
 open /Applications/Firefox.app
 open /Applications/Zotero.app
+osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to not dark mode'
