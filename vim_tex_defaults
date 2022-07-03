@@ -62,6 +62,12 @@ snippet presentation Presentation_Template
 		${0}
 	\\end{frame}
 
+	\\begin{frame}[allowframebreaks]
+		\\frametitle{References}
+		\\small
+		\\bibliographystyle{apalike}
+		\\bibliography{bibliography}
+	\\end{frame}
 	\\end{document}
 
 snippet poster "Beamer poster template"
