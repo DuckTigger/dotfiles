@@ -40,13 +40,5 @@
 
 - create:
   - ~/Downloads
-  - ~/Documents/PhD/ion-trap-noise
-  - ~/Documents/PhD/latex-projects/ion-trap-noise-latex
-  - ~/Documents/PhD/Notes
-  - ~/Documents/PhD/AnsatzFinder
-  - ~/Documents/PhD/non-linearities
-  - ~/Documents/PhD/bibliography
-
-
-
-
+  - ~/Documents/Obsidian/
+  - ~/Documents/Riverlane/
