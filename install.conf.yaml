@@ -31,8 +31,8 @@
     ~/Documents/PhD/git_uncomitted.sh: git_uncomitted.sh
     ~/loginrc.cmd: loginrc.cmd
     ~/.vim/spell/en.utf-8.add: en.utf-8.add
-    ~/.config/yabai/yabairc: yabai-config/yabairc
-    ~/.config/skhd/skhdrc: yabai-config/skhdrc
+    ~/.config/yabai/yabairc: yabairc
+    ~/.config/skhd/skhdrc: skhdrc
     ~/light.sh: light.sh
     ~/dark.sh: dark.sh
     ~/switchModes.sh: switchModes.sh
