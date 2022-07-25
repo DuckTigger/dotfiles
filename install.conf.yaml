@@ -32,13 +32,16 @@
     ~/loginrc.cmd: loginrc.cmd
     ~/.vim/spell/en.utf-8.add: en.utf-8.add
     ~/.config/yabai/yabairc: yabairc
+    ~/.config/yabai/scripts/open_iterm2.sh: open_iterm2.sh
     ~/.config/skhd/skhdrc: skhdrc
     ~/light.sh: light.sh
     ~/dark.sh: dark.sh
     ~/switchModes.sh: switchModes.sh
+    ~/Documents/PhD/.gitconfig: gitconfig_personal
 
 
 - create:
   - ~/Downloads
   - ~/Documents/Obsidian/
   - ~/Documents/Riverlane/
+  - ~/Documents/PhD
