@@ -1,4 +1,4 @@
-if [[ {hostname} == "mary.local" ]]; then
+if [[ $(hostname) = *mary* ]]; then
 	alias vim="~/nvim-linux64/bin/nvim"
 else
 	# statements
