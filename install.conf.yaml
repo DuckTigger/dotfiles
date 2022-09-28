@@ -18,8 +18,13 @@
     ~/.oh-my-zsh/functions/ucl-vpn: zshfunctions/ucl-vpn
     ~/.ssh/config: ssh-config
     ~/.oh-my-zsh/custom/aliases.zsh: aliases.zsh
+    ~/.oh-my-zsh/oh-my-zsh.sh: oh-my-zsh.sh
+    ~/antigen.zsh: antigen.zsh
     ~/.vim/plugged/vim-snippets/UltiSnips/tex.snippets: vim_tex_snippets
     ~/.vim/plugged/vim-snippets/snippets/tex.snippets: vim_tex_defaults 
+    ~/.vim/plugged/vim-snippets/UltiSnips/markdown.snippets: markdown_ultisnips.snippets
+    ~/.vim/plugged/vim-snippets/snippets/markdown.snippets: markdown_snippets.snippets 
+    ~/.vim/plugged/vimtex/after/ftplugin/markdown.vim: vimtex_in_md.vim
     ~/.vim/.vimrc: vimrc
     ~/.config/nvim/currentmode: currentmode
     ~/.config/nvim/init.vim: nvim_init.vim

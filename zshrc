@@ -20,6 +20,7 @@ antigen bundle sudo
 antigen bundle safe-paste
 antigen bundle rsync
 antigen bundle themes
+antigen bundle darvid/zsh-poetry
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 
@@ -29,20 +30,6 @@ antigen apply
 autoload -Uz ucl-vpn && ucl-vpn
 autoload -Uz ucl-down
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -51,3 +38,22 @@ export PROMPT_COMMAND=`printf "\e]112\a"`
 export PATH=$PATH:/home/andrew/.spicetify
 export PATH=$PATH:/Users/andrew/.spicetify
 export PATH=$PATH:/Users/andrewpatterson/.spicetify
+export PATH=$PATH:/opt/homebrew/anaconda3/bin
+export PATH=$PATH:/Users/andrewpatterson/Documents/Riverlane/psi4/objdir/stage/bin
+export PSI_SCRATCH=/Users/andrewpatterson/.psi4_scratch
+export PYTHONPATH=/Users/andrewpatterson/Documents/Riverlane/psi4/objdir/stage/lib/:$PYTHONPATH  # psi4 pymodule
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/andrewpatterson/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/andrewpatterson/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/Users/andrewpatterson/miniforge3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/andrewpatterson/miniforge3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
