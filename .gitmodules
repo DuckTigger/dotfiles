@@ -8,3 +8,6 @@
 [submodule "iterm"]
 	path = iterm
 	url = git@github.com:catppuccin/iterm.git
+[submodule "catppucin_zathurA"]
+	path = catppucin_zathurA
+	url = git@github.com:catppuccin/zathura.git
