@@ -455,9 +455,8 @@ snippet ft \footnote
 	\\footnote{${1:${VISUAL:text}}}${0}
 snippet fig figure environment (includegraphics)
 	\\begin{figure}
-	\\begin{center}
+		\\centering
 		\\includegraphics[width=${1}\\textwidth]{${2}}
-	\\end{center}
 	\\caption{${3}}
 	\\label{fig:${4}}
 	\\end{figure}
