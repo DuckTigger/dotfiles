@@ -1,8 +1,13 @@
 [init]
 	defaultBranch = main
 [user]
-	email = andrew.pattersonap24@googlemail.com
+	email = andrew.patterson@riverlane.com
 	name = Andrew Patterson
+[includeIf "gitdir:~/Documents/PhD/"]
+	path = ~/Documents/PhD/.gitconfig
+[includeIf "gitdir:~/Obsidian"]
+	path = ~/Documents/PhD/.gitconfig
+
 [pull]
 	rebase = false
 [color]
@@ -15,3 +20,4 @@
 
 [core]
 	excludesfile = ~/.gitignore
+	editor = vim

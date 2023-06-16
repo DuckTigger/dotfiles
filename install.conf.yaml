@@ -18,8 +18,13 @@
     ~/.oh-my-zsh/functions/ucl-vpn: zshfunctions/ucl-vpn
     ~/.ssh/config: ssh-config
     ~/.oh-my-zsh/custom/aliases.zsh: aliases.zsh
+    ~/.oh-my-zsh/oh-my-zsh.sh: oh-my-zsh.sh
+    ~/antigen.zsh: antigen.zsh
     ~/.vim/plugged/vim-snippets/UltiSnips/tex.snippets: vim_tex_snippets
     ~/.vim/plugged/vim-snippets/snippets/tex.snippets: vim_tex_defaults 
+    ~/.vim/plugged/vim-snippets/UltiSnips/markdown.snippets: markdown_ultisnips.snippets
+    ~/.vim/plugged/vim-snippets/snippets/markdown.snippets: markdown_snippets.snippets 
+    ~/.vim/plugged/vimtex/after/ftplugin/markdown.vim: vimtex_in_md.vim
     ~/.vim/.vimrc: vimrc
     ~/.config/nvim/currentmode: currentmode
     ~/.config/nvim/init.vim: nvim_init.vim
@@ -31,22 +36,17 @@
     ~/Documents/PhD/git_uncomitted.sh: git_uncomitted.sh
     ~/loginrc.cmd: loginrc.cmd
     ~/.vim/spell/en.utf-8.add: en.utf-8.add
-    ~/.config/yabai/yabairc: yabai-config/yabairc
-    ~/.config/skhd/skhdrc: yabai-config/skhdrc
+    ~/.config/yabai/yabairc: yabairc
+    ~/.config/yabai/scripts/open_iterm2.sh: open_iterm2.sh
+    ~/.config/skhd/skhdrc: skhdrc
     ~/light.sh: light.sh
     ~/dark.sh: dark.sh
     ~/switchModes.sh: switchModes.sh
+    ~/Documents/PhD/.gitconfig: gitconfig_personal
 
 
 - create:
   - ~/Downloads
-  - ~/Documents/PhD/ion-trap-noise
-  - ~/Documents/PhD/latex-projects/ion-trap-noise-latex
-  - ~/Documents/PhD/Notes
-  - ~/Documents/PhD/AnsatzFinder
-  - ~/Documents/PhD/non-linearities
-  - ~/Documents/PhD/bibliography
-
-
-
-
+  - ~/Documents/Obsidian/
+  - ~/Documents/Riverlane/
+  - ~/Documents/PhD
