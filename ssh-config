@@ -17,10 +17,10 @@ Host socrates
 
 Host Home-PC
 	User andrew
-	HostName 192.168.86.183
+	HostName 192.168.68.62
 	Port 39861
 
 Host External-Home-PC
 	User andrew
-	HostName 81.102.128.230
+	HostName 81.101.133.239
 	Port 39861
