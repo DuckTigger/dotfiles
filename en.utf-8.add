@@ -289,6 +289,8 @@ parameterised
 states
 states
 states
+diagonalisation
+corellation
 prover
 computation
 briegel
@@ -297,3 +299,14 @@ quantum
 quantum
 quantum
 quantum
+qubitization
+toric
+rydberg
+abelian
+anyons
+wavefunctions
+exchange
+anyon
+matchgate
+majorana
+markovian

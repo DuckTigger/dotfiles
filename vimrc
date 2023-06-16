@@ -37,6 +37,9 @@ Plug 'kamykn/spelunker.vim'
 Plug 'sonph/onehalf'
 Plug 'dylanaraps/wal.vim'
 Plug 'mracos/mermaid.vim'
+
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -87,6 +90,7 @@ set t_Co=256
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+let g:vim_markdown_math = 1
 " Sets the visual bell when using MVim
 autocmd! GUIEnter * set vb t_vb="|f"
 
