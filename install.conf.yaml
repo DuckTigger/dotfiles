@@ -32,6 +32,7 @@
     ~/texmf/tex/latex/moderncv: moderncv/
     ~/.zshfunctions: zshfunctions/
     ~/.gitconfig: gitconfig
+    ~/Documents/PhD/.gitconfig: gitconfig_phd
     ~/.gitignore: gitignore
     ~/Documents/PhD/git_uncomitted.sh: git_uncomitted.sh
     ~/loginrc.cmd: loginrc.cmd
