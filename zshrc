@@ -39,9 +39,10 @@ export PATH=$PATH:/home/andrew/.spicetify
 export PATH=$PATH:/Users/andrew/.spicetify
 export PATH=$PATH:/Users/andrewpatterson/.spicetify
 export PATH=$PATH:/opt/homebrew/anaconda3/bin
-export PATH=$PATH:/Users/andrewpatterson/Documents/Riverlane/psi4/objdir/stage/bin
-export PSI_SCRATCH=/Users/andrewpatterson/.psi4_scratch
-export PYTHONPATH=/Users/andrewpatterson/Documents/Riverlane/psi4/objdir/stage/lib/:$PYTHONPATH  # psi4 pymodule
+export PATH="$PATH:$HOME/Documents/Riverlane/psi4/objdir/stage/bin"
+export PSI_SCRATCH="$HOME/.psi4_scratch"
+export PYTHONPATH="$HOME/Documents/Riverlane/psi4/objdir/stage/lib/:$PYTHONPATH"  # psi4 pymodule
+export GPAW_SETUP_PATH="$HOME/.GPAW_DATA/gpaw-setups-0.9.20000"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -52,7 +53,7 @@ else
     if [ -f "/Users/andrewpatterson/miniforge3/etc/profile.d/conda.sh" ]; then
         . "/Users/andrewpatterson/miniforge3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/andrewpatterson/miniforge3/bin:$PATH"
+        export PATH="$PATH":/Users/andrewpatterson/miniforge3/bin
     fi
 fi
 unset __conda_setup
