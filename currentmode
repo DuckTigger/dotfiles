@@ -1,2 +1,2 @@
-let g:catppuccin_flavour = "latte"
+let g:catppuccin_flavour = "mocha"
 colorscheme catppuccin

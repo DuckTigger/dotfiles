@@ -11,4 +11,4 @@ set vertical-center true
 
 set recolor false
 set selection-clipboard clipboard
-include catppuccin
+include catppuccin-latte

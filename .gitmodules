@@ -14,3 +14,9 @@
 [submodule "alacritty"]
 	path = alacritty
 	url = git@github.com:catppuccin/alacritty.git
+[submodule "btop"]
+	path = btop
+	url = git@github.com:catppuccin/btop.git
+[submodule "btop_catppuccin"]
+	path = btop
+	url = git@github.com:catppuccin/btop.git

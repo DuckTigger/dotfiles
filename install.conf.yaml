@@ -26,8 +26,8 @@
     ~/.vim/plugged/vim-snippets/snippets/markdown.snippets: markdown_snippets.snippets 
     ~/.vim/plugged/vimtex/after/ftplugin/markdown.vim: vimtex_in_md.vim
     ~/.vim/.vimrc: vimrc
-    ~/.config/nvim/currentmode: currentmode
-    ~/.config/nvim/init.vim: nvim_init.vim
+      # ~/.config/nvim/currentmode: currentmode
+      # ~/.config/nvim/init.vim: nvim_init.vim
     ~/texmf/tex/latex/ucl-beamer: ucl-beamer/
     ~/texmf/tex/latex/moderncv: moderncv/
     ~/.zshfunctions: zshfunctions/

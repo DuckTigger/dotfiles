@@ -9,6 +9,6 @@ set selection-notification false
 set sandbox none
 set vertical-center true
 
-set recolor false
+set recolor true
 set selection-clipboard clipboard
-include catppuccin
+include catppuccin-frappe
