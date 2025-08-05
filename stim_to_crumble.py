@@ -13,6 +13,7 @@ def main():
         sys.exit(1)
     
     circuit_string = sys.argv[1]
+    circuit_string = circuit_string.replace('\\n', '\n')
     
     try:
         # Parse the circuit string
