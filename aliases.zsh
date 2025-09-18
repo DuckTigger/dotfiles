@@ -3,6 +3,7 @@ if [[ $(hostname) = *mary* ]]; then
 else
 	# statements
 	alias vim=nvim
+  alias vimdiff='nvim -d'
 	alias ls='lsd --group-dirs=first'
 	alias ytop='ytop -p'
 	alias btop=bpytop
@@ -27,3 +28,4 @@ alias cx='cd ~/Documents/Riverlane/code_explorer/'
 alias py='python3.13'
 alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox'
 alias crumble='~/dotfiles/to_crumble_circuit.sh'
+alias drq='cd ~/Documents/Riverlane/diraq_noise_modelling/'
