@@ -27,8 +27,10 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme romkatv/powerlevel10k
 antigen apply
 
+fpath=(/Users/andrewpatterson/dotfiles/zshfunctions $fpath)
 autoload -Uz ucl-vpn && ucl-vpn
 autoload -Uz ucl-down
+autoload -Uz zth
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
