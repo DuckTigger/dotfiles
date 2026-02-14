@@ -24,3 +24,7 @@ Host External-Home-PC
 	User andrew
 	HostName 81.101.133.239
 	Port 39861
+
+Host clodius
+	User andrew
+	HostName pi-clodius.local
